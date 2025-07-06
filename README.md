@@ -102,9 +102,9 @@ Make sure the backend is running at http://localhost:8080.
 
 ✅ SweetAlert2 Popups
 
-(Add screenshots in /assets folder and embed here)
+
 
 🧑‍💻 Author
 Pratik Rathod
-📧 Email: your-email@example.com
-🌐 Portfolio: [your-portfolio-link]
+📧 Email: pratikrathod01638@gmail.com
+🌐 Portfolio: []
