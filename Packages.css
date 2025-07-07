@@ -1,0 +1,79 @@
+/* Base container styling */
+.package-container {
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100vh;
+  transition: background-color 1s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.package-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Card grid */
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Individual package card */
+.package-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 25px 30px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Card hover effects */
+.package-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Card title */
+.package-card h3 {
+  color: #007bff;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Card details */
+.package-card p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+/* No data message */
+.no-data {
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 30px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .package-card {
+    width: 90%;
+  }
+}

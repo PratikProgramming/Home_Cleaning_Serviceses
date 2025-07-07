@@ -1,0 +1,65 @@
+.view-container {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0faff;
+  min-height: 100vh;
+}
+
+.view-container h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+  text-align: center;
+}
+
+.card-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.card-list::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  perspective: 1000px;
+  width: 260px;
+  height: 300px;
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: white;
+}
+
+.card-front {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(145deg, #d0e7ff, #ffffff);
+}

@@ -1,0 +1,70 @@
+.admin-dashboard {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.5); /* Optional: Darken background */
+}
+
+.dashboard-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dashboard-card {
+  width: 260px;
+  padding: 25px;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(12px);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-icon {
+  font-size: 36px;
+  color: #00e5ff;
+  margin-bottom: 10px;
+}
+
+.manage-btn {
+  margin-top: 40px;
+  padding: 12px 28px;
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.manage-btn:hover {
+  background: linear-gradient(135deg, #38f9d7 0%, #43e97b 100%);
+}
