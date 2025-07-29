@@ -1,0 +1,30 @@
+.edit-services {
+  padding: 30px;
+}
+.edit-services .form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.edit-services input {
+  padding: 8px;
+}
+.edit-services button {
+  padding: 8px 14px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+.edit-services table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.edit-services th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.edit-services th {
+  background-color: #f0f0f0;
+}

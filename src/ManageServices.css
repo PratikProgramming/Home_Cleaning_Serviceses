@@ -1,0 +1,64 @@
+.manage-container {
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.service-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.service-form input {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.service-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.service-form button:hover {
+  background-color: #0056b3;
+}
+
+.service-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service-table th, .service-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.service-table th {
+  background-color: #f4f4f4;
+}
+
+.service-table button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-table button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+.service-table button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
